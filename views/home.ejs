@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lego Collection</title>
+  <link rel="stylesheet" href="/css/main.css" />
+
+  <style>
+    .card {
+        height: 100%;
+        margin: 10px;
+        background-color: rgba(0, 0, 0, 0.1); ;
+    }
+    
+    .card img {
+        height: 200px;
+        object-fit: cover; 
+    }
+
+  </style>
+</head>
+
+<body tabindex="-1">
+    <%- include('partials/navbar', {page:'/home'}) %>
+
+  <div class="container mx-auto">
+      <div class="hero bg-base-200 rounded-lg p-6">
+          <div class="hero-content text-center ">
+              <div class="max-w-lg">
+                  <h1 class="text-5xl font-bold">Look Into Our Lego Library</h1>
+      
+                  <p class="py-6">Explore the colorful world of Lego to uncover your creative potential. There are countless opportunities for your imagination to go wild.</p>
+              
+                  <a href="/lego/sets" class="btn btn-primary">View Collection</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <br>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div>
+
+          <div class="card bg-base-100 shadow-xl">
+              <figure>
+              <img class="w-full" src="https://cdn.rebrickable.com/media/sets/003-1.jpg" alt="Lego set - 003-1">
+              </figure>
+              <div class="card-body">
+              <h2 class="card-title">Master Mechanic Set</h2>
+              <p>This set was released in America (USA/CAN) by Samsonite in 1966. It was never released in Europe.</p>
+                  <div class="card-actions justify-end">
+                          <a href="/lego/sets/003-1" class="btn btn-primary">View</a>
+                  </div>
+              </div>
+
+          </div>
+
+      </div>
+
+      <div>
+        <div class="card bg-base-100 shadow-xl">
+          <figure>
+          <img class="w-full" src="https://cdn.rebrickable.com/media/sets/021-1.jpg" alt="Lego Set 021-1">
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Wheel Set</h2>
+            <p>This set was released in America (USA/CAN) by Samsonite in 1966. It was never released in Europe.</p>
+            <div class="card-actions justify-end">
+                <a href="/lego/sets/021-1" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+      <div class="card bg-base-100 shadow-xl">
+          <figure>
+          <img class="w-full " src="https://cdn.rebrickable.com/media/sets/0241357594-1.jpg" alt="Lego Set 0241357594-1">
+          </figure>
+          <div class="card-body">
+          <h2 class="card-title">Star Wars: Build Your Own Adventure: Galactic Missions</h2>
+          <p>The book also features 2 cardboard bookmarks which can be pulled out of the packaging, and an A2-sized colour poster featuring build ideas from the book.</p>
+              <div class="card-actions justify-end">
+                  <a href="/lego/sets/0241357594-1" class="btn btn-primary">View</a>
+              </div>
+          </div>
+      </div>
+
+      </div>
+  </div>
+  
+</body>
+
+</html>
